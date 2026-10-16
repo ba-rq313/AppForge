@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c16">
+  <meta name="description" content="AppForge — تخصيص مشاريع Android التي تملك حق تعديلها.">
+  <title>AppForge — صانع نسخ Android</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090c16;--panel:#111726;--panel2:#151e30;--line:#29344b;--muted:#9ba8be;--text:#eef3ff;--blue:#7c9dff;--cyan:#6fe3e0;--ok:#7fe0b1;--bad:#ff9c9c;--r:20px}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#182c52 0,transparent 34%),radial-gradient(ellipse at 98% 30%,#143238 0,transparent 28%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;min-height:100vh}
+    .wrap{max-width:1140px;margin:auto;padding:28px 22px 50px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px}.brand{display:flex;align-items:center;gap:13px}.logo{width:46px;height:46px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(145deg,#8aa8ff,#60ddd2);color:#081019;font-size:23px;font-weight:900;box-shadow:0 8px 30px #5ca7d833}.brand b{display:block;font-size:18px;letter-spacing:.2px}.brand small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.pill{border:1px solid var(--line);padding:8px 12px;border-radius:99px;color:#c4d0e7;background:#111827;font-size:12px;white-space:nowrap}.hero{max-width:760px;margin:0 auto 34px;text-align:center}.eyebrow{color:var(--cyan);font-size:13px;font-weight:750;letter-spacing:.3px}.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.16;letter-spacing:-1.2px;margin:15px 0}.grad{background:linear-gradient(90deg,#a4b8ff,#72e5dc);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#aab6cb;line-height:1.9;font-size:15px;max-width:650px;margin:0 auto}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:start}.card{border:1px solid #293750;background:linear-gradient(155deg,#131c2cF2,#0e1421F5);border-radius:var(--r);padding:24px;box-shadow:0 18px 55px #0002}.cardhead{display:flex;align-items:center;gap:12px;margin-bottom:20px}.num{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#253657;color:#bcd0ff;font-weight:800}.card h2{font-size:18px;margin:0 0 4px}.sub{font-size:12px;color:var(--muted);line-height:1.6}.field{margin:17px 0}.field label{display:block;font-size:13px;color:#d7dfef;font-weight:650;margin-bottom:8px}.field input{width:100%;background:#090f1a;border:1px solid #303c54;border-radius:12px;color:var(--text);padding:13px 14px;font:inherit;outline:none;transition:.2s}.field input:focus{border-color:#819dff;box-shadow:0 0 0 3px #7897ff1c}.hint{color:#8d9bb2;font-size:11px;line-height:1.8;margin-top:7px}.btn{border:0;width:100%;padding:13px 16px;border-radius:12px;background:linear-gradient(100deg,#8da8ff,#70ded8);color:#07111d;font-weight:850;font:inherit;cursor:pointer;transition:transform .15s,filter .15s}.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}.btn:disabled{opacity:.55;cursor:wait;transform:none}.btn.secondary{background:#1a2942;color:#dce6ff;border:1px solid #34486d;margin-top:9px}.divider{height:1px;background:var(--line);margin:21px 0}.status{display:none;margin-top:14px;padding:12px 13px;border-radius:12px;font-size:13px;line-height:1.7;white-space:pre-line}.status.show{display:block}.status.info{color:#c6d5ff;background:#172441;border:1px solid #304b7a}.status.success{color:#a8f2ce;background:#102b27;border:1px solid #27594d}.status.error{color:#ffc1c1;background:#301d24;border:1px solid #65404a}.info-row{display:flex;align-items:flex-start;gap:12px;padding:13px 0;border-bottom:1px solid #253047}.info-row:last-child{border-bottom:0}.ico{flex:0 0 34px;height:34px;display:grid;place-items:center;border-radius:11px;background:#1d2b42;color:var(--cyan);font-size:17px}.info-row strong{display:block;font-size:13px;margin:1px 0 5px}.info-row p{font-size:12px;color:var(--muted);margin:0;line-height:1.7}.warn{margin-top:18px;padding:14px 15px;border-radius:13px;background:#2a2419;border:1px solid #56442b;color:#e6d4ae;font-size:12px;line-height:1.85}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-left:6px}.footer{margin-top:26px;display:flex;justify-content:space-between;gap:12px;color:#79869c;font-size:11px;line-height:1.8}.hidden{display:none!important}
+    @media(max-width:800px){.wrap{padding:20px 14px 32px}.top{margin-bottom:36px}.pill{display:none}.grid{grid-template-columns:1fr}.hero{margin-bottom:24px}.card{padding:19px}.footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand"><div class="logo">A</div><div><b>AppForge</b><small>ANDROID PROJECT STUDIO</small></div></div>
+      <div class="pill"><span class="dot"></span>نسخة أولية · مفتوحة المصدر</div>
+    </header>
+    <section class="hero">
+      <div class="eyebrow">حوّل مشروعك إلى نسخة تحمل هويتك</div>
+      <h1>مشروع Android، <span class="grad">باسمك وهويتك</span></h1>
+      <p>افحص معلومات صفحة Google Play، ثم خصّص مشروع Android Gradle الذي تملك حق تعديله. غيّر اسم التطبيق ومعرّف الحزمة والأيقونة، ونزّل المصدر المجهّز للبناء.</p>
+    </section>
+    <main class="grid">
+      <section class="card">
+        <div class="cardhead"><div class="num">01</div><div><h2>فحص رابط التطبيق</h2><div class="sub">نستخرج معرّف الحزمة ومعلومات صفحة المتجر المتاحة</div></div></div>
+        <form id="analyzeForm">
+          <div class="field"><label for="playUrl">رابط Google Play</label><input id="playUrl" type="url" placeholder="https://play.google.com/store/apps/details?id=com.example.app" required dir="ltr" autocomplete="url"><div class="hint">يجب أن يكون رابط صفحة التطبيق الرسمية، وليس رابط تنزيل APK.</div></div>
+          <button class="btn" id="analyzeBtn" type="submit">فحص الرابط ←</button>
+        </form>
+        <div id="analyzeStatus" class="status" role="status"></div>
+        <div id="metadata" class="divider hidden"></div>
+        <div id="metadataRows" class="hidden"></div>
+        <div class="divider"></div>
+        <div class="cardhead"><div class="num">02</div><div><h2>تخصيص مصدر Android</h2><div class="sub">ارفع ZIP لمشروع Gradle تملك أو يُسمح لك بتعديله</div></div></div>
+        <form id="prepareForm">
+          <div class="field"><label for="sourceZip">ملف المشروع المضغوط (.zip)</label><input id="sourceZip" type="file" accept=".zip,application/zip" required><div class="hint">حد أقصى 50 MB. لا يكفي ملف APK وحده؛ المطلوب ملفات المصدر مع إعدادات Gradle.</div></div>
+          <div class="field"><label for="appName">اسم النسخة الجديدة</label><input id="appName" type="text" maxlength="60" placeholder="مثال: تطبيقّي بلس" required></div>
+          <div class="field"><label for="packageId">معرّف الحزمة الجديد</label><input id="packageId" type="text" dir="ltr" placeholder="com.example.myapp" pattern="[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+" required><div class="hint">استخدم معرّفًا فريدًا بأحرف صغيرة، مثل com.yourname.myapp.</div></div>
+          <div class="field"><label for="iconFile">أيقونة مخصصة (اختياري)</label><input id="iconFile" type="file" accept="image/png,image/jpeg"><div class="hint">PNG أو JPEG، لا يتجاوز 4 MB. تُنشأ أحجام الأيقونة الأساسية تلقائيًا.</div></div>
+          <button class="btn" id="prepareBtn" type="submit">تخصيص المصدر وتنزيل ZIP</button>
+        </form>
+        <div id="prepareStatus" class="status" role="status"></div>
+      </section>
+      <aside class="card">
+        <div class="cardhead"><div class="num">✓</div><div><h2>شنو تسوي الأداة؟</h2><div class="sub">النسخة الأولى مركزة على التخصيص الآمن للمصدر</div></div></div>
+        <div class="info-row"><div class="ico">⌕</div><div><strong>تحليل رابط المتجر</strong><p>تقرأ معرّف الحزمة، وقد تعرض اسم التطبيق ووصفه إذا سمحت صفحة المتجر بالوصول.</p></div></div>
+        <div class="info-row"><div class="ico">✎</div><div><strong>تغيير الاسم</strong><p>تحدّث مورد اسم التطبيق والاسم الظاهر في ملف Manifest وفق بنية المشروع.</p></div></div>
+        <div class="info-row"><div class="ico">▦</div><div><strong>معرّف تثبيت مستقل</strong><p>تغيّر applicationId في إعداد Gradle عندما يكون ذلك ممكنًا؛ بعض المشاريع تحتاج تعديلًا يدويًا.</p></div></div>
+        <div class="info-row"><div class="ico">◈</div><div><strong>أيقونة جديدة</strong><p>إنشاء ملفات launcher bitmap بالأحجام المعروفة، مع تجاوز ملفات adaptive icon الافتراضية عند الحاجة.</p></div></div>
+        <div class="info-row"><div class="ico">⚡</div><div><strong>المصدر يبقى قابلًا للمراجعة</strong><p>تستلم ZIP معدلًا، ثم تبنيه باستخدام Android Studio أو Gradle في بيئتك.</p></div></div>
+        <div class="warn"><strong>مهم قبل الاستخدام</strong><br>رابط المتجر لا يحتوي ملفات التطبيق الأصلية. هذه الأداة لا تنسخ تطبيقات تجارية مغلقة، ولا تفك APK أو تتجاوز التراخيص. ولا تحذف إعلانات تطبيقات الغير تلقائيًا؛ عطّل الإعلانات من المصدر الذي تملكه أو المسموح لك بتعديله.</div>
+      </aside>
+    </main>
+    <footer class="footer"><span>AppForge · مشروع تجريبي قابل للتطوير</span><span>لا ترفع أسرارًا أو مفاتيح توقيع أو شيفرات لا تملك إذنًا لاستخدامها.</span></footer>
+  </div>
+<script>
+const $ = (id) => document.getElementById(id);
+function showStatus(id, type, message) { const el=$(id); el.className=`status show ${type}`; el.textContent=message; }
+function packageFromUrl(url) { try { return new URL(url).searchParams.get('id') || ''; } catch { return ''; } }
+$('playUrl').addEventListener('input', () => { const pkg=packageFromUrl($('playUrl').value.trim()); if(pkg && !$('packageId').value.trim()) $('packageId').value = pkg.replace(/[^a-zA-Z0-9_.]/g,'').toLowerCase(); });
+$('analyzeForm').addEventListener('submit', async (e) => {
+  e.preventDefault(); const btn=$('analyzeBtn'); btn.disabled=true; btn.textContent='جارٍ فحص الرابط…';
+  showStatus('analyzeStatus','info','أتحقق من رابط صفحة Google Play. قد تتعذر قراءة الاسم إذا قيّد المتجر الطلبات.');
+  try {
+    const res=await fetch('/api/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({play_store_url:$('playUrl').value.trim()})});
+    const data=await res.json(); if(!res.ok) throw new Error(data.detail || 'تعذّر فحص الرابط.');
+    $('packageId').value=data.package_id || '';
+    const rows=$('metadataRows'); rows.replaceChildren();
+    for(const [label,value] of [['معرّف الحزمة',data.package_id],['اسم المتجر',data.title || 'لم يعرضه المتجر في هذا الطلب'],['الوصف',data.description || 'غير متاح']]) { const row=document.createElement('div'); row.className='info-row'; const text=document.createElement('div'); text.style.cssText='font-size:12px;line-height:1.8;overflow-wrap:anywhere'; const strong=document.createElement('strong'); strong.textContent=label; const p=document.createElement('p'); p.textContent=value; p.style.color='var(--muted)'; text.append(strong,p); row.append(text); rows.append(row); }
+    $('metadata').classList.remove('hidden'); rows.classList.remove('hidden');
+    showStatus('analyzeStatus','success','تم التحقق من صيغة الرابط. ملاحظة: هذا فحص لمعلومات صفحة المتجر فقط، وليس تنزيلًا أو استنساخًا للتطبيق.');
+  } catch(err) { showStatus('analyzeStatus','error',err.message || 'حدث خطأ غير متوقع.'); }
+  finally { btn.disabled=false; btn.textContent='فحص الرابط ←'; }
+});
+$('prepareForm').addEventListener('submit', async (e) => {
+  e.preventDefault(); const btn=$('prepareBtn'); const zip=$('sourceZip').files[0]; const icon=$('iconFile').files[0];
+  if(!zip) return; if(zip.size>50*1024*1024) return showStatus('prepareStatus','error','حجم ZIP يتجاوز 50 MB.'); if(icon && icon.size>4*1024*1024) return showStatus('prepareStatus','error','حجم الأيقونة يتجاوز 4 MB.');
+  const form=new FormData(); form.append('source_zip',zip); form.append('app_name',$('appName').value.trim()); form.append('package_id',$('packageId').value.trim()); if(icon) form.append('icon',icon);
+  btn.disabled=true; btn.textContent='جارٍ تجهيز المصدر…'; showStatus('prepareStatus','info','يجري فحص ملفات ZIP وتعديل الاسم ومعرّف الحزمة والأيقونة عند اختيارها.');
+  try {
+    const res=await fetch('/api/prepare-source',{method:'POST',body:form});
+    if(!res.ok){const data=await res.json().catch(()=>({}));throw new Error(data.detail || 'تعذرت معالجة المصدر.');}
+    const blob=await res.blob(); const href=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=href; a.download='appforge-prepared-source.zip'; document.body.append(a); a.click(); a.remove(); URL.revokeObjectURL(href);
+    const warnings=res.headers.get('X-AppForge-Warnings');
+    showStatus('prepareStatus', warnings ? 'info':'success', 'تم تجهيز ZIP للمصدر وتنزيله. الخطوة التالية: فك الضغط، افتح المشروع في Android Studio، ثم نفّذ Gradle Sync وابنِ التطبيق. ' + (warnings ? '\nملاحظات: '+warnings : 'افحص البناء على جهازك قبل التوزيع.'));
+  } catch(err) { showStatus('prepareStatus','error',err.message || 'حدث خطأ غير متوقع.'); }
+  finally { btn.disabled=false; btn.textContent='تخصيص المصدر وتنزيل ZIP'; }
+});
+</script>
+</body>
+</html>
